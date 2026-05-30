@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КВАРЦВИНИЛ</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <main>
+        <div class="pluses">
+            <div class="container">
+                <div class="pluses_top">
+                    <h2 class="section_title">ПЛЮСЫ КВАРЦВИНИЛА</h2>
+                    <div class="slider_arrows">
+                        <button id="prevBtn" class="arrow_btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+
+                        <button id="nextBtn" class="arrow_btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="pluses_slider">
+                    <div class="pluses_track" id="sliderTrack">
+                        <div class="plus_card">
+                            <img src="img/Pluses/piesek.png" alt="Износостойкость">
+                            <div class="plus_title">
+                                ИЗНОСОСТОЙКОСТЬ
+                            </div>
+                            <div class="plus_text">
+                                Обладает композитным износостойким прозрачным защитным слоем 0,3–0,55 мм.
+                            </div>
+                        </div>
+                        <div class="plus_card">
+                            <img src="img/Pluses/children.png" alt="Экологичность">
+                            <div class="plus_title">
+                                ЭКОЛОГИЧНОСТЬ
+                            </div>
+                            <div class="plus_text">
+                                Напольное покрытие не выделяет летучих органических соединений.
+                            </div>
+                        </div>
+                        <div class="plus_card">
+                            <img src="img/Pluses/log.png" alt="Реалистичность">
+                            <div class="plus_title">
+                                РЕАЛИСТИЧНОСТЬ
+                            </div>
+                            <div class="plus_text">
+                                Декоративный слой передает вид натуральной древесины и камня.
+                            </div>
+                        </div>
+                        <div class="plus_card">
+                            <img src="img/Pluses/family.png" alt="Звукоизоляция">
+                            <div class="plus_title">
+                                ЗВУКОИЗОЛЯЦИЯ
+                            </div>
+                            <div class="plus_text">
+                                Хорошо гасит ударный шум и создает акустический комфорт.
+                            </div>
+                        </div>
+                        <div class="plus_card">
+                            <img src="img/Pluses/mounting.png" alt="Монтаж">
+                            <div class="plus_title">
+                                ПРОСТОТА МОНТАЖА
+                            </div>
+                            <div class="plus_text">
+                                Легко монтируется на подготовленное основание.
+                            </div>
+                        </div>
+                        <div class="plus_card">
+                            <img src="img/Pluses/thermalsomething.png" alt="Теплопроводность">
+                            <div class="plus_title">
+                                ТЕПЛОПРОВОДНОСТЬ
+                            </div>
+                            <div class="plus_text">
+                                Совместим с системами теплого пола.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form_section">
+            <div class="container">
+
+                <h2 class="section_title">ДОБАВИТЬ НОВЫЙ ЭЛЕМЕНТ</h2>
+
+                <form id="advantageForm">
+                    <input type="text" id="title" placeholder="Название" required>
+
+                    <textarea id="description" placeholder="Описание" required></textarea>
+
+                    <input type="file" id="image" accept="image/*" required>
+
+                    <button type="submit">Добавить</button>
+                </form>
+
+            </div>
+        </div>
+        <div class="services">
+            <div class="container">
+
+                <h2 class="section_title">НАШИ УСЛУГИ</h2>
+
+                <div class="services_grid">
+                    <div class="service_item">
+                        <img src="img/Service/laying.png" alt="Укладка">
+                        <div class="service_overlay">
+                            УКЛАДКА НАПОЛЬНЫХ ПОКРЫТИЙ
+                        </div>
+                    </div>
+                    <div class="service_item">
+                        <img src="img/Service/lift.png" alt="Подъем">
+                        <div class="service_overlay">
+                            ПОДЪЕМ НА ЭТАЖ
+                        </div>
+                    </div>
+                    <div class="service_item">
+                        <img src="img/Service/samples.png" alt="Образцы">
+                        <div class="service_overlay">
+                            ПОКАЖЕМ ОБРАЗЦЫ
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

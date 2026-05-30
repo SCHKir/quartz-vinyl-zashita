@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F5F5F3;
+    font-family: 'Manrope', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: calc(100% - 100px);
+    margin: 0 auto;
+}
+
+.section_title {
+    font-size: 46px;
+    font-weight: 500;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+/*Плюсы*/
+
+.pluses {
+    margin-top: 120px;
+}
+
+.pluses_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.slider_arrows {
+    display: flex;
+    gap: 20px;
+}
+
+.arrow_btn {
+    width: 60px;
+    height: 60px;
+
+    border: 1px solid black;
+    border-radius: 50%;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 24px;
+
+    transition: 0.3s;
+}
+
+.arrow_right svg {
+    transform: scaleX(-1);
+}
+
+.arrow_btn:hover {
+    background: black;
+    color: white;
+}
+
+.pluses_slider {
+    overflow: hidden;
+}
+
+.pluses_track {
+    display: flex;
+    gap: 40px;
+
+    transition: 0.5s;
+}
+
+.plus_card {
+    width: 400px;
+    flex-shrink: 0;
+}
+
+.plus_card img {
+    width: 400px;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+}
+
+.plus_title {
+    margin-bottom: 12px;
+
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.plus_text {
+    font-size: 21px;
+    line-height: 150%;
+}
+
+/*Форма*/
+
+.form_section {
+    margin-top: 120px;
+}
+
+#advantageForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#advantageForm input,
+#advantageForm textarea {
+    padding: 20px;
+
+    border: 1px solid #DADADA;
+    border-radius: 12px;
+
+    font-size: 18px;
+    font-family: inherit;
+}
+
+#advantageForm textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+#advantageForm button {
+    width: 240px;
+    height: 60px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: black;
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+/*Услуги */
+
+.services {
+    margin-top: 140px;
+    margin-bottom: 120px;
+}
+
+.services .section_title {
+    margin-bottom: 60px;
+}
+
+.services_grid {
+    display: flex;
+    gap: 40px;
+}
+
+.service_item {
+    position: relative;
+
+    width: 580px;
+    height: 450px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+}
+
+.service_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.service_overlay {
+    position: absolute;
+
+    top: 30px;
+    left: 30px;
+
+    width: 370px;
+
+    color: white;
+
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 130%;
+
+    text-transform: uppercase;
+}
+
+/*Адаптивность*/
+
+@media(max-width: 768px) {
+    
+    .container {
+        width: calc(100% - 32px);
+    }
+
+    .section_title {
+        font-size: 23px;
+        line-height: 130%;
+        text-transform: uppercase;
+    }
+
+    /*Блок плюсы*/
+    .pluses {
+        margin-top: 60px;
+    }
+
+    .pluses_top {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        margin-bottom: 30px;
+        gap: 15px;
+    }
+
+    .pluses .section_title {
+        text-align: left; 
+    }
+
+    .slider_arrows {
+        display: flex;
+        gap: 12px;
+        flex-shrink: 0;
+    }
+
+    .arrow_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #000000;
+        background: transparent;
+        border-radius: 50%;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .pluses_slider {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .pluses_track {
+        display: flex;
+        gap: 40px;
+    }
+
+    .plus_card {
+        width: 100%; 
+        flex-shrink: 0;
+    }
+
+    .plus_card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin-bottom: 16px;
+    }
+
+    .plus_title {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .plus_text {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    /*Блок услуги*/
+    .services {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .services .section_title {
+        text-align: center; 
+        margin-bottom: 30px;
+    }
+
+    .services_grid {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .service_item {
+        width: 100%;
+        height: 250px; 
+    }
+
+    .service_overlay {
+        top: 25px;
+        left: 25px;
+        width: calc(100% - 50px);
+        font-size: 22px;
+        line-height: 130%;
+    }
+    
+    /*Блок форма*/
+    .form_section {
+        margin-top: 60px;
+    }
+
+    #advantageForm input,
+    #advantageForm textarea {
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    #advantageForm button {
+        width: 100%;
+    }
+}
